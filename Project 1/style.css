@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.header h1 {
+    color: #fff;
+    /*background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.credit {
+    text-align: center;
+    margin: 0 auto;
+    bottom: 30px;
+    max-width: 400px;
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+#generate-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#share-facebook {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+#share-twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+/*----Footer----*/
+
+footer {
+    color:#1877f2
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    background-color: #17182f;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
