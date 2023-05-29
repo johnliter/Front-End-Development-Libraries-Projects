@@ -1,0 +1,312 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .light-mode  {
+    background-color: #bd8686; /* Light background color */
+    color: #333; /* Dark text color */
+  }
+  
+  .light-mode header,
+  .light-mode footer {
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);; /* Light background color for header and footer */
+    color: #fff;
+  }
+  
+  .light-mode .project {
+    background-color: #f4f4f4; /* Light background color for projects */
+    color: #333; /* Dark text color for projects */
+  }
+  
+  .light-mode .project h2 {
+    color: #333; /* Dark text color for project headings */
+  }
+  
+  .light-mode .project a {
+    color: #333; /* Dark text color for project links */
+  }
+  
+  .light-mode .project a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,5,95,1) 47%, rgba(0,212,255,1) 100%);
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Project Section Styles */
+  .project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  
+  .project h2 {
+    margin-top: 0;
+    color: #fff; /* Light text color */
+  }
+  
+  .project p {
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    color: #fff; /* Light text color */
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+    background-size: 1000% auto;
+    animation: rainbow-gradient 15s linear infinite;
+    color: white; /* Set the default font color to white */
+  }
+   
+  @keyframes rainbow-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  footer {
+    margin-top: auto; /* Push footer to the bottom of the page */
+    text-align: center; /* Center the content of the footer */
+    padding: 25px 0; /* Add padding to the footer */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,5,95,1) 47%, rgba(0,212,255,1) 100%);
+    color: #fff;
+  }
+
+  /* Like Button */
+
+  .like-button {
+    background: linear-gradient(135deg, #ff69b4, #00008b); /* Gradient from pink to dark blue */
+    color: #fff; /* Light text color for the like button */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    background: linear-gradient(135deg, #ff1493, #0000cd); /* Gradient from lighter pink to darker blue on hover */
+}
+  
+  .like-count {
+    margin-left: 10px; /* Add spacing between the like button and count */
+  }
+
+  #mode-toggle {
+    background: linear-gradient(135deg, #ffd700, #00008b); /* Gradient from yellow to dark blue */
+    color: #fff; /* Light text color for the mode toggle button */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add spacing below the mode toggle button */
+  }
+  
+  #mode-toggle:hover {
+    background: linear-gradient(135deg, #ffc107, #0000cd); /* Gradient from lighter yellow to darker blue on hover */
+}
+
+  #mode-toggle i {
+    margin-right: 5px; /* Add spacing between the icon and text */
+  }
+
+  /* Contact Section */
+  .contact-section {
+    background-color: #323534; /* Background color for the contact section */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 4px;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 15px; /* Add spacing below the contact section heading */
+    color: #ffffff;
+  }
+  
+/* Social Media */
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+}
+.social-button::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+    color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+}
+.social-button i, .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+.social-button i {
+    font-size: 25.6px;
+}
+.social-button svg {
+    height: 40%;
+    width: 40%;
+}
+.social-button--mail {
+    color: #0072c6;
+}
+.social-button--mail::after {
+    background: #0072c6;
+}
+.social-button--facebook {
+    color: #3b5999;
+}
+.social-button--facebook::after {
+    background: #3b5999;
+}
+.social-button--linkedin {
+    color: #0077b5;
+}
+.social-button--linkedin::after {
+    background: #0077b5;
+}
+.social-button--github {
+    color: #6e5494;
+}
+.social-button--github::after {
+    background: #6e5494;
+}
+.social-button--codepen {
+    color: #212121;
+}
+.social-button--codepen::after {
+    background: #212121;
+}
+.social-button--steam {
+    color: #7da10e;
+}
+.social-button--steam::after {
+    background: #7da10e;
+}
+.social-button--snapchat {
+    color: #eec900;
+}
+.social-button--snapchat::after {
+    background: #eec900;
+}
+.social-button--twitter {
+    color: #55acee;
+}
+.social-button--twitter::after {
+    background: #55acee;
+}
+.social-button--instagram {
+    color: #e4405f;
+}
+.social-button--instagram::after {
+    background: #e4405f;
+}
+.social-button--npmjs {
+    color: #c12127;
+}
+.social-button--npmjs::after {
+    background: #c12127;
+}
+
+/* Credit */
+
+.credit {
+    text-align: center;
+}
+
+.button {
+    background-image: linear-gradient(90deg, #00e3c8 0%,#fc006d 49%, #82fc00 100%);
+    background-size: 200%;
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    animation: anime 1s linear infinite;
+    -webkit-animation: anime 1s linear infinite;
+}
+@keyframes anime {
+    0%{
+        background-position: 100%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+span {
+    display: inline-block;
+    background: #07091a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
