@@ -310,3 +310,16 @@ span {
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
+
+.quote-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote {
+  border-left: 3px solid gray;
+  padding-left: 10px;
+  margin-left: 0;
+  color: gray;
+  font-style: italic;
+}
