@@ -323,3 +323,7 @@ span {
   color: gray;
   font-style: italic;
 }
+
+.button1 {
+  background: linear-gradient(to right, #00ff00, #000000, #ff0000);
+  color: #ffffff;
